@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <div class="container">
+        <div class="text-container">
+            <h2>Ingrese el Texto</h2>
+            <textarea id="inputText" placeholder="Ingrese el texto aqui..."></textarea>
+            <div class="button-container">
+                <button onclick="encryptText()">Encriptar</button>
+                <button onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="text-container">
+            <h2>Resultado</h2>
+            <div class="result-wrapper">
+                <textarea id="resultText" readonly></textarea>
+                <div class="placeholder">
+                    <img src="Muñeco (1).png" alt="Placeholder Image" class="placeholder-image">
+                    <p class="placeholder-text">Ningún mensaje fue encontrado</p>
+                </div>
+            </div>
+            <div class="button-container copy-button-container">
+                <button onclick="copyToClipboard()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Elaborado por Pablo Mendoza
+    <script src="script.js"></script>
+</body>
+</html>

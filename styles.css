@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #E0F7FF; /* Azul más claro */
+    color: #007BFF; /* Mismo color que el logo */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 100px;
+    box-sizing: border-box;
+}
+
+.text-container {
+    width: 45%; /* Ajustar ancho para agregar margen */
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5%; /* Agregar márgenes a ambos lados */
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 300px; /* Aumentar la altura a una tercera parte más grande */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 2;
+    resize: none;
+}
+
+.result-wrapper {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Aumentar la altura a una tercera parte más grande */
+}
+
+.result-wrapper textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+    resize: none;
+}
+
+.result-wrapper .placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.result-wrapper .placeholder-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen se ajuste completamente */
+}
+
+.result-wrapper .placeholder-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    width: 100%;
+}
+
+button {
+    margin: 5px; /* Ajustar el margen para los botones */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF; /* Color azul */
+    color: white;
+    flex: 1; /* Asegura que todos los botones tengan el mismo tamaño */
+    max-width: 200px; /* Establece un ancho máximo para los botones */
+    box-sizing: border-box;
+    height: 48px; /* Asegura que todos los botones tengan la misma altura */
+}
+
+.copy-button-container {
+    margin-top: 40px;
+    justify-content: center; /* Centra el botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+button:active {
+    background-color: #003f7f; /* Azul aún más oscuro */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Media Queries para tabletas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text-container {
+        width: 100%;
+        margin: 10px 2.5%; /* Mantener márgenes consistentes */
+    }
+
+    .button-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    button {
+        width: calc(100% - 20px); /* Asegura que los botones ocupen el ancho completo con márgenes */
+        max-width: none; /* Desactivar el ancho máximo */
+    }
+}
+
+/* Media Queries para teléfonos */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .text-container {
+        width: 100%;
+        margin: 10px 2.5%; /* Mantener márgenes consistentes */
+    }
+
+    .button-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    button {
+        width: calc(100% - 20px); /* Asegura que los botones ocupen el ancho completo con márgenes */
+        max-width: none; /* Desactivar el ancho máximo */
+    }
+}
