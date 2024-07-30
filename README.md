@@ -41,14 +41,16 @@ Este proyecto es una aplicación web diseñada para encriptar y desencriptar men
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1. Clona el repositorio:
-   ```sh
-  https://github.com/mandalleri13/encriptador.git
+   ```sh 
+   git clone https://github.com/tuusuario/text-encryptor-decryptor.git
 
 2. Navega al directorio del proyecto:
+    ```sh
     cd encriptador
+   
 
 
-3. Abre index.html en tu navegador web preferido.
+4. Abre index.html en tu navegador web preferido.
 
 ## Desarrollado por Pablo Mendoza
 ## Proyecto: Entrega Final
