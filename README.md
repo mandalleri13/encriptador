@@ -42,7 +42,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/mandalleri13/encriptador.git
+  https://github.com/mandalleri13/encriptador.git
 
 2. Navega al directorio del proyecto:
     cd encriptador
